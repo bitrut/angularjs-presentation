@@ -109,7 +109,7 @@
   $(function () {
     var name = $('#name').val();
     var greeting = $('#greeting');
-    name.keydown(function () {
+    name.keyup(function () {
       greeting.text('Hello '+ name + '!');
     })
   })
@@ -131,7 +131,7 @@
 						    var name = $('#name');
 						    var greeting = $('#greeting');
 
-						    name.keydown(function () {
+						    name.keyup(function () {
 						      greeting.text('Hello '+ name.val() + '!');
 						    })
 						  })
